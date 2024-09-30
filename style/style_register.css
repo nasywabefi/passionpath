@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Menambahkan padding kiri dan kanan agar tidak terlalu mepet */
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.navbar .rata-kiri{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.logo {
+    order: 1; /* Menempatkan logo di sebelah kiri */
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav {
+    order: 2; /* Pindahkan navigasi di sebelah kiri setelah logo */
+    display: flex;
+    gap: 20px;
+    margin-left: 1px; /* Tambahkan jarak antara logo dan navigasi */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 300; /* Membuat font lebih tipis */
+    font-size: 15px; /* Sesuaikan ukuran font */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #7d64ff; /* Warna saat hover */
+}
+
+.auth-buttons {
+    order: 3; /* Memindahkan tombol Login dan Register ke kanan */
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .register-btn {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px; /* Membuat tombol lonjong */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.login-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.register-btn {
+    background-color: #7d64ff;
+    color: #fff;
+    border: none;
+}
+
+.register-btn:hover {
+    background-color: #5d4acc;
+    color: #fff;
+}
+
+
+.comingsoon h1{
+    margin: 175px;
+    text-align: center;
+
+}
+
+
+/* footer */
+/* footer */
+/* Styling untuk footer */
+footer {
+    background-color: #141414;
+    padding: 40px 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kekanan{
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-about, .contact-us, .information {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-about h3, .contact-us h3, .information h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #FF7569;
+}
+
+.kekanan .contact-us ul, .kekanan .information ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kekanan .contact-us ul li, .kenanan .information ul li {
+    margin-bottom: 10px;
+}
+
+.kekanan .contact-us ul li a, .kekanan .information ul li a {
+    text-decoration: none;
+    color: #ffff;
+    transition: color 0.3s;
+}
+
+.kekanan .contact-us ul li a:hover,.kekanan .information ul li a:hover {
+    color: #fff;
+}
