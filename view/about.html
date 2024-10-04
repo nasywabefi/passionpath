@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About PassionPath</title>
-    <link rel="shotcut icon" type="n-icon" href="../img/logo_Square_passionpath.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo_Square_passionpath.png">
+
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../style/style_about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="rata-kiri">
-                <div class="logo">
-                    <img src="../img/logo_long_passionpath.png" alt="PassionPath Logo">
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="rata-kiri d-flex">
+                    <div class="logo">
+                        <img src="../img/logo_long_passionpath.png" alt="PassionPath Logo" class="img-fluid">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../view/index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../view/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../view/product.html">Product</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="../view/index.html">Home</a></li>
-                        <li><a href="../view/about.html">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="../view/product.html">Product</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="auth-buttons">
-                <button class="login-btn">Login</button>
-                <button class="register-btn">Register</button>
+                <div class="auth-buttons d-flex">
+                    <button class="btn login-btn">Login</button>
+                    <button class="btn register-btn">Register</button>
+                </div>
             </div>
         </div>
     </header>
@@ -38,11 +46,11 @@
             <div class="highlight-bg">
                 <h1>Mengapa Harus PassionPath?</h1>
             </div>
-            
+
             <p class="highlight">Tau kah kamu?</p>
             <blockquote>
                 “87% mahasiswa di Indonesia merasa<br>salah jurusan dengan berbagai alasan”
-                <span>ahli Educational Psychologist dari Integrity Development Flexibility (IDF),Irene Guntur,</span>
+                <span>ahli Educational Psychologist dari Integrity Development Flexibility (IDF), Irene Guntur,</span>
             </blockquote>
             <p>Dengan fenomena tersebut, PassionPath hadir untuk meminimalisir permasalahan tersebut. PassionPath 
                 <br>merupakan platform belajar untuk mencari minat bakat pada siswa SMP dan SMA untuk ke jenjang lebih lanjut.</p>
@@ -56,31 +64,29 @@
                 </ul>
             </div>
             <h3>Tentukan dan jelajahi jalur karir yang kamu minati bersama PassionPath!</h3>
-            <button class="join-btn">Join Now</button>
+            <button class="join-btn btn">Join Now</button>
         </section>
     </main>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container container">
             <div class="footer-about">
                 <h3>Tentang Kami</h3>
                 <p>PassionPath membantu pengguna mengenali potensi dan minat melalui tes psikologis ilmiah. Platform ini memberikan rekomendasi karir dan pendidikan yang sesuai, serta laporan hasil tes untuk pengembangan diri dan perencanaan masa depan.</p>
             </div>
     
-            <div class="kekanan">
-                <div class="contact-us">
-                    <!-- <div class="footer-links"> -->
+            <div class="kekanan row">
+                <div class="contact-us col-md-6">
                     <h3>Contact Us</h3>
                     <ul>
                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
-                        <li><a href="#courses"><i class="fa-solid fa-envelope"></i> Email</a></li>
-                        <li><a href="#about"><i class="fa-solid fa-location-dot"></i> Cawang PGC, Lt.4</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Cawang PGC, Lt.4</a></li>
                     </ul>
                 </div>
     
-                <div class="information">
-                    <!-- <div class="footer-contact"> -->
-                    <h3>information</h3>
+                <div class="information col-md-6">
+                    <h3>Information</h3>
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Jumlah Donasi</a></li>
                         <li><a href="#"><i class="fa-solid fa-images"></i> Dokumentasi</a></li>
@@ -89,6 +95,9 @@
                  </div>
             </div>
         </div>
-        </footer>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

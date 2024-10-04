@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #DCF529;
 }
 
 .navbar {
@@ -100,13 +100,58 @@ nav ul li a:hover {
     color: #fff;
 }
 
-
-.comingsoon h1{
-    margin: 175px;
-    text-align: center;
-
+/*body*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
 }
 
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 720px;
+    height: 560px;
+}
+
+.col-md-6{
+    max-height: 540px;
+}
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 75px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}
 
 /* footer */
 /* footer */
@@ -114,7 +159,7 @@ nav ul li a:hover {
 footer {
     background-color: #141414;
     padding: 40px 0;
-    color: #fff;
+    color: #8b7272;
     font-family: 'Poppins', sans-serif;
 }
 
