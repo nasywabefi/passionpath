@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +11,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Header Section */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -128,9 +128,9 @@ nav ul li a:hover {
     background-color: white;
     border-radius: 46px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    align-items: center;
-    width: 265px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -142,24 +142,30 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 41px;
+}
+
+/* Aligning image center */
+.card-image {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Border colors for each card */
 .program-card:nth-child(1) {
-    border-color: #8968F6; /* Ungu */
+    border-color: #8968F6;
 }
 
 .program-card:nth-child(2) {
-    border-color: #8968F6; /* Ungu */
+    border-color: #8968F6;
 }
 
 .program-card:nth-child(3) {
-    border-color: #8968F6; /* Biru */
-}
-
-.program-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 41px;
+    border-color: #8968F6;
 }
 
 .program-card h3 {
@@ -184,7 +190,7 @@ nav ul li a:hover {
 }
 
 /* Style for Join Now button */
-.program-card .join-btn {
+.program-card .btn-primary {
     background-color: #8968F6;
     color: white;
     padding: 10px 20px;
@@ -196,28 +202,27 @@ nav ul li a:hover {
 }
 
 /* Hover effect for buttons */
-.program-card .join-btn:hover {
+.program-card .btn-primary:hover {
     background-color: #4192f0;
     color: white;
 }
 
 /* Specific for the first card */
-.program-card:nth-child(1) .join-btn {
+.program-card:nth-child(1) .btn-primary {
     background-color: #8968F6;
 }
 
-.program-card:nth-child(1) .join-btn:hover {
+.program-card:nth-child(1) .btn-primary:hover {
     background-color: #4192f0;
     color: white;
 }
 
 /* Specific for the third card */
-.program-card:nth-child(3) .join-btn {
+.program-card:nth-child(3) .btn-primary {
     background-color: #8968F6;
 }
 
-/* Hover effect for the third card button */
-.program-card:nth-child(3) .join-btn:hover {
+.program-card:nth-child(3) .btn-primary:hover {
     background-color: #4192f0;
     color: white;
 }
@@ -234,6 +239,7 @@ nav ul li a:hover {
         margin-bottom: 20px;
     }
 }
+
 
 /* footer */
 footer {
@@ -285,4 +291,3 @@ footer {
 .kekanan .contact-us ul li a:hover,.kekanan .information ul li a:hover {
     color: #fff;
 }
-
