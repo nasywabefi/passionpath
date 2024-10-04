@@ -264,6 +264,10 @@ nav ul li a:hover {
 /* faq */
 .faq{
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq h1{
@@ -274,12 +278,12 @@ nav ul li a:hover {
 .faq .card-faq{
     margin-left: 5%; 
     margin-top: 30px;
-    width: 90%;
+    width: 70%;
     padding: 30px;
     box-sizing: border-box;
     background-color: #D9D9D9;
     border-radius: 50px;
-    color: black;
+    color: black; 
 }
 
 .faq .card-faq h3{
