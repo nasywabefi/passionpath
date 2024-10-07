@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <!-- Panggil file CSS Bootstrap  -->
-    <link rel="shotcut icon" type="n-icon" href="../img/logo_Square_passionpath.png">
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="../style/style_nav-footer.css">
     <link rel="stylesheet" href="../style/style_register.css">
-    <link rel="stylesheet" href="../style/style_index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
 </head>
 
 <body>
     <header>
-        <div class="navbar">
+        <!-- Changed class to navbar-custom -->
+        <div class="navbar-custom">
             <div class="rata-kiri">
                 <div class="logo">
                     <img src="../img/logo_long_passionpath.png" alt="PassionPath Logo">
@@ -26,15 +28,14 @@
                     <ul>
                         <li><a href="../view/index.html">Home</a></li>
                         <li><a href="../view/about.html">About</a></li>
-                        <li><a href="#">Contact</a></li>
                         <li><a href="../view/product.html">Product</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="auth-buttons">
-                <button class="login-btn">Login</button>
-                <button class="register-btn">Register</button>
+                <a href="../view/login.html"> <button class="login-btn">Login</button></a>
+                <a href="../view/register.html"> <button class="register-btn">Register</button></a>
             </div>
         </div>
     </header>
@@ -50,7 +51,7 @@
                         <div class="text-center mb-4">
                             <img alt="PassionPath'" height="50" src="../img/logo_long_passionpath.png" width="200" />
                         </div>
-                        <h4 class="text-center mb-4">Create an account</h4>
+                        <h4 class="text-center mb-4">DAFTAR</h4>
                         <form>
                             <div class="row">
                                 <div class="col-md-6">
@@ -76,7 +77,7 @@
                             <i class="fab fa-windows"></i>
                         </div>
                         <div class="text-center login-link mt-3">
-                            Already have an Account? <a href="#">Login!</a>
+                            Already have an Account? <a href="../view/login.html">Login!</a>
                         </div>
                     </div>
                 </div>
@@ -89,9 +90,11 @@
         <div class="footer-container">
             <div class="footer-about">
                 <h3>Tentang Kami</h3>
-                <p>PassionPath membantu pengguna mengenali potensi dan minat melalui tes psikologis ilmiah. Platform ini memberikan rekomendasi karir dan pendidikan yang sesuai, serta laporan hasil tes untuk pengembangan diri dan perencanaan masa depan.</p>
+                <p>PassionPath membantu pengguna mengenali potensi dan minat melalui tes psikologis ilmiah. Platform ini
+                    memberikan rekomendasi karir dan pendidikan yang sesuai, serta laporan hasil tes untuk pengembangan
+                    diri dan perencanaan masa depan.</p>
             </div>
-    
+
             <div class="kekanan">
                 <div class="contact-us">
                     <!-- <div class="footer-links"> -->
@@ -102,19 +105,19 @@
                         <li><a href="#"><i class="fa-solid fa-location-dot"></i> Cawang PGC, Lt.4</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="information">
                     <!-- <div class="footer-contact"> -->
                     <h3>information</h3>
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Jumlah Donasi</a></li>
                         <li><a href="#"><i class="fa-solid fa-images"></i> Dokumentasi</a></li>
-                        <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Program & Rencana</a></li>   
+                        <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Program & Rencana</a></li>
                     </ul>
-                 </div>
+                </div>
             </div>
         </div>
-        </footer>
+    </footer>
 
     <!-- Panggil file JS Bootstrap  -->
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
