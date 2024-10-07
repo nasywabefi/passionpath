@@ -9,8 +9,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
+
+    padding-top: 80px;
 }
 
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
 /*  Navbar custom  */
 .navbar-custom {
     display: flex;
@@ -21,6 +27,13 @@ body {
     border-bottom: 2px solid #eee;
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
+
+    position: fixed; 
+    top: 0;         
+    left: 0;        
+    right: 0;       
+    z-index: 1000;  
+    transition: background-color 0.3s ease; 
 }
 
 .navbar-custom .rata-kiri {
