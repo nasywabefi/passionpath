@@ -7,3 +7,15 @@ Kelompok 10:
 6. AKHMAD SYAHRUL AMIN (10357763)
 7. ANDI NURUL FITRI TAQIAH PATARAI (11485961)
 8. REZA FEBRIAN (977029)
+
+CARA CLONE
+git clone (link repo)
+
+CARA PUSH/PULL
+
+git init
+git add .
+git commit -m "isi pesan"
+git remote add origin (link repo)
+git pull origin main
+git push origin main
