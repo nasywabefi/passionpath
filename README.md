@@ -14,7 +14,7 @@ CARA CLONE REPO:
 ```bash
 git clone (link repository)
 ```
-CARA PUSH/PULL
+CARA PUSH 
 ```bash
 git init
 ```
@@ -32,4 +32,9 @@ git pull origin main
 ```
 ```bash
 git push origin main
+```
+
+CARA PULL SAJA
+```bash
+git pull origin main
 ```
