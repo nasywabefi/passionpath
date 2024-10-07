@@ -12,24 +12,24 @@ Kelompok 10:
 
 CARA CLONE REPO:
 ```bash
-$ git clone (link repository)
+git clone (link repository)
 ```
 CARA PUSH/PULL
 ```bash
-$ git init
+git init
 ```
 ```bash
-$ git add .
+git add .
 ```
 ```bash
-$ git commit -m "isi pesan"
+git commit -m "isi pesan"
 ```
 ```bash
-$ git remote add origin (link repostitory)
+git remote add origin (link repostitory)
 ```
 ```bash
-$ git pull origin main
+git pull origin main
 ```
 ```bash
-$ git push origin main
+git push origin main
 ```
