@@ -11,13 +11,25 @@ Kelompok 10:
 
 
 CARA CLONE REPO:
-git clone https://github.com/akhmadsahrul/passionpath.git
-
+```bash
+$ git clone (link repository)
+```
 CARA PUSH/PULL
-
-git init
-git add .
-git commit -m "isi pesan"
-git remote add origin https://github.com/akhmadsahrul/passionpath.git
-git pull origin main
-git push origin main
+```bash
+$ git init
+```
+```bash
+$ git add .
+```
+```bash
+$ git commit -m "isi pesan"
+```
+```bash
+$ git remote add origin (link repostitory)
+```
+```bash
+$ git pull origin main
+```
+```bash
+$ git push origin main
+```
