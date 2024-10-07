@@ -9,13 +9,13 @@ Kelompok 10:
 8. REZA FEBRIAN (977029)
 
 CARA CLONE
-git clone (link repo)
+git clone https://github.com/akhmadsahrul/passionpath.git
 
 CARA PUSH/PULL
 
 git init
 git add .
 git commit -m "isi pesan"
-git remote add origin (link repo)
+git remote add origin https://github.com/akhmadsahrul/passionpath.git
 git pull origin main
 git push origin main
