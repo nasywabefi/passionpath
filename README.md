@@ -8,7 +8,9 @@ Kelompok 10:
 7. ANDI NURUL FITRI TAQIAH PATARAI (11485961)
 8. REZA FEBRIAN (977029)
 
-CARA CLONE
+
+
+CARA CLONE REPO:
 git clone https://github.com/akhmadsahrul/passionpath.git
 
 CARA PUSH/PULL
