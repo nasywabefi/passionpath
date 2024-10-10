@@ -287,35 +287,50 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#bulet1 i{
+    color: #000000;
+    font-size: 20px;
+    z-index: 200;
+
+}
+
+/* #bulet1 .fa-minus{
+    display: none;
+} */
+
 #bulet3{
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
 }
 #bulet4{
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
 }
 #bulet5{
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
 }
 #bulet6{
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
 }
 .question1 .kaga-ada{
@@ -329,7 +344,7 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #5d4acc;
+    /* background-color: #5d4acc; */
     z-index: 100;
 }
 .kaga-ada{
