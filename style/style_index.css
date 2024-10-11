@@ -148,6 +148,16 @@ body {
     align-items: center;
 }
 
+.button-container2 a {
+    display: flex; /* Menyusun tombol dalam satu baris */
+    justify-content: center; /* Mengatur posisi tombol di tengah */
+    flex-wrap: wrap; /* Mengatur agar tombol turun ke baris berikutnya jika tidak muat */
+    gap: 15px; /* Jarak antar tombol */
+    margin: 30px 0; /* Jarak dari elemen lain */
+    align-items: center;
+    text-decoration: none;
+}
+
 /* mba mba kudung merah */
 .mbakudung{
     margin-bottom: 50px;
