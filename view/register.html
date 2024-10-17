@@ -12,7 +12,7 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="../style/style_nav-footer.css" />
-    <link rel="stylesheet" href="../style/style_register.css" />
+    <link rel="stylesheet" href="../style/style_register_login.css" />
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -21,106 +21,74 @@
   </head>
 
   <body>
-    <header>
-      <!-- Changed class to navbar-custom -->
+  <header>
       <div class="navbar-custom">
-        <div class="rata-kiri">
-          <div class="logo">
-            <img
-              src="../img/logo_long_passionpath.png"
-              alt="PassionPath Logo"
-            />
+          <div class="rata-kiri">
+              <div class="logo">
+                     <a href=""><img src="../img/logo_long_passionpath.png" alt="PassionPath Logo" /></a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="../view/index.html">Home</a></li>
+                      <li><a href="../view/about.html">About</a></li>
+                      <li><a href="../view/product.html">Products</a></li>
+                  </ul>
+              </nav>
           </div>
-          <nav>
-            <ul>
-              <li><a href="../view/index.html">Home</a></li>
-              <li><a href="../view/about.html">About</a></li>
-              <li><a href="../view/product.html">Product</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="auth-buttons">
-          <a href="../view/login.html">
-            <button class="login-btn">Login</button></a
-          >
-          <a href="../view/register.html">
-            <button class="register-btn">Register</button></a
-          >
-        </div>
+          <div class="auth-buttons">
+              <a href="../view/login.html">
+                  <button class="login-btn">Login</button>
+              </a>
+              <a href="../view/register.html">
+                  <button class="register-btn">Register</button>
+              </a>
+          </div>
+          <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
       </div>
-    </header>
+  </header>
 
     <div class="container">
       <div class="card">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img
-              alt=""
-              class="img-fluid"
-              height="600"
-              src="../img/registerbg.png"
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <div class="text-center mb-4">
-                <img
-                  alt="PassionPath'"
-                  height="50"
-                  src="../img/logo_long_passionpath.png"
-                  width="200"
-                />
+          <div class="row g-0">
+              <div class="col-md-6">
+                  <img alt="Background Image" class="img-fluid" src="../img/bgregister.png" />
               </div>
-              <h4 class="text-center mb-4">DAFTAR</h4>
-              <form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <input
-                      class="form-control"
-                      placeholder="First name"
-                      type="text"
-                    />
+              <div class="col-md-6">
+                  <div class="card-body">
+                      <h4 class="text-center mb-4">DAFTAR</h4>
+                      <form>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <input class="form-control mb-3" placeholder="First name" type="text" required />
+                              </div>
+                              <div class="col-md-6">
+                                  <input class="form-control mb-3" placeholder="Last name" type="text" required/>
+                              </div>
+                          </div>
+                          <input class="form-control mb-3" placeholder="E-Mail" type="email" required />
+                          <div class="input-group mb-3">
+                              <input id="password" class="form-control" placeholder="Enter your password" type="password" required />
+                              <span class="input-group-text" id="toggle-password">
+                                  <i class="fas fa-eye"></i>
+                              </span>
+                          </div>
+                          <button class="btn btn-primary w-100" type="submit">Register</button>
+                      </form>
+                      <div class="divider">or sign up with</div>
+                      <div class="text-center social-buttons">
+                        <a href="#" class="google-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="apple-icon"><i class="fab fa-apple"></i></a>
+                    </div>
+                    
+                      <div class="text-center login-link mt-3">
+                          Already have an Account? <a href="../view/login.html">Login!</a>
+                      </div>
                   </div>
-                  <div class="col-md-6">
-                    <input
-                      class="form-control"
-                      placeholder="Last name"
-                      type="text"
-                    />
-                  </div>
-                </div>
-                <input class="form-control" placeholder="E-Mail" type="email" />
-                <div class="input-group">
-                  <input
-                    id="password"
-                    class="form-control"
-                    placeholder="Enter your password"
-                    type="password"
-                  />
-                  <span class="input-group-text" id="toggle-password">
-                    <i class="fas fa-eye"></i>
-                  </span>
-                </div>
-                <button class="btn btn-primary w-100" type="submit">
-                  Register
-                </button>
-              </form>
-              <div class="divider">or sign up with</div>
-              <div class="text-center social-buttons">
-                <i class="fab fa-google"></i>
-                <i class="fab fa-apple"></i>
-                <i class="fab fa-windows"></i>
               </div>
-              <div class="text-center login-link mt-3">
-                Already have an Account? <a href="../view/login.html">Login!</a>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-
+  </div>
+  
     <footer>
       <div class="footer-container">
         <div class="footer-about">
@@ -178,7 +146,7 @@
     </footer>
 
     <!-- Panggil file JS Bootstrap  -->
-    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../style/app.js"></script>
-  </body>
 </html>
