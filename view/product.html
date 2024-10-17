@@ -29,12 +29,13 @@
       <div class="navbar-custom">
         <div class="rata-kiri">
           <div class="logo">
-            <img
-              src="../img/logo_long_passionpath.png"
-              alt="PassionPath Logo"
-            />
+            <img src="../img/logo_long_passionpath.png" alt="PassionPath Logo" />
           </div>
-          <nav>
+          <!-- Tambahkan tombol toggle untuk versi mobile -->
+          <button class="navbar-toggler" id="navbar-toggler">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="navbar-menu">
             <ul>
               <li><a href="../view/index.html">Home</a></li>
               <li><a href="../view/about.html">About</a></li>
@@ -42,14 +43,14 @@
             </ul>
           </nav>
         </div>
-
+    
         <div class="auth-buttons">
           <a href="../view/login.html">
-            <button class="login-btn">Login</button></a
-          >
+            <button class="login-btn">Login</button>
+          </a>
           <a href="../view/register.html">
-            <button class="register-btn">Register</button></a
-          >
+            <button class="register-btn">Register</button>
+          </a>
         </div>
       </div>
     </header>
@@ -64,7 +65,7 @@
         <img
           src="../img/pict_Program1_VideoInteraktif.jpg"
           alt="Video Interaktif"
-          style="width: 250px; height: 200px"
+          class="card-image"
         />
         <h3 style="text-align: left">Video Interaktif</h3>
         <p style="text-align: left">
@@ -81,7 +82,7 @@
         <img
           src="../img/pict_Program2_TalkwithExpert.jpg"
           alt="Talk with Expert"
-          style="width: 250px; height: 200px"
+          class="card-image"
         />
         <h3 style="text-align: left">Talk with Expert</h3>
         <p style="text-align: left">

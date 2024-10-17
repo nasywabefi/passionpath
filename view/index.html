@@ -25,21 +25,34 @@
 
             klikFaq1.addEventListener("click", function () {
                 document.querySelector(".question1 p").classList.toggle('ada')
+                document.querySelector(".bulet1 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet1 div:nth-child(1)").classList.toggle('kaga-ada')
+
             })
             klikFaq2.addEventListener("click", function () {
                 document.querySelector(".question2 p").classList.toggle('ada')
+                document.querySelector(".bulet2 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet2 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq3.addEventListener("click", function () {
                 document.querySelector(".question3 p").classList.toggle('ada')
+                document.querySelector(".bulet3 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet3 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq4.addEventListener("click", function () {
                 document.querySelector(".question4 p").classList.toggle('ada')
+                document.querySelector(".bulet4 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet4 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq5.addEventListener("click", function () {
                 document.querySelector(".question5 p").classList.toggle('ada')
+                document.querySelector(".bulet5 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet5 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq6.addEventListener("click", function () {
                 document.querySelector(".question6 p").classList.toggle('ada')
+                document.querySelector(".bulet6 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet6 div:nth-child(1)").classList.toggle('kaga-ada')
             })
 
         })
@@ -52,7 +65,7 @@
             document.querySelector('section').style.dispay = 'none';
             document.querySelector(".page").style.display = 'none';
             document.getElementById("donut-spinner").style.display = 'none';
-        }, 3000);
+        }, 1000);
     </script>
 
     <style>
@@ -118,18 +131,20 @@
     <main class="ilang" id="ilang2">
         <div class="jumbotron">
             <div class="jumbotron-content">
-                <img style="margin: 20px;" src="../img/pict_jumbotron.png" alt="Gambar" class="jumbotron-image">
+                <img src="../img/pict_jumbotron.png" alt="Gambar" class="jumbotron-image">
                 <div class="jumbotron-text">
-                    <h2 style="margin: 20px;">Passion Path
+                    <h2>Passion Path
                         <br>
                         Education Platform
                     </h2>
-                    <p style="margin: 20px;">Pembelajaran minat bakat pada siswa
+                    <p>Pembelajaran minat bakat pada siswa
                         <br>
                         SMP/MTS/MA/SMA/SMK Sederajat
                     </p>
                     <p>
-                        <a href="../view/product.html"> <button class="button-product">Get Started</button></a>
+                        <a href="../view/product.html">
+                            <button class="button-product">Get Started</button>
+                        </a>
                     </p>
                 </div>
             </div>
@@ -149,11 +164,16 @@
         <br>
 
         <div class="button-container2"> <!-- Container untuk kedua button -->
-            <a href="courses/bussines.html"><button class="button-business"><i class="fa-solid fa-briefcase fa-2x"></i>Business</button></a>
-            <a href="courses/development.html"><button class="button-development"><i class="fa-solid fa-file-code fa-2x"></i>Development</button></a>
-            <a href="courses/language.html"><button class="button-language"><i class="fa-solid fa-language fa-2x"></i>Language</button></a>
-            <a href="courses/design.html"><button class="button-design"><i class="fa-solid fa-pen-ruler fa-2x"></i>Design</button></a>
-            <a href="courses/accounting.html"><button class="button-office"><i class="fa-solid fa-calculator fa-2x"></i></i>Accounting</button></a>
+            <a href="courses/bussines.html"><button class="button-business"><i
+                        class="fa-solid fa-briefcase fa-2x"></i>Business</button></a>
+            <a href="courses/development.html"><button class="button-development"><i
+                        class="fa-solid fa-file-code fa-2x"></i>Development</button></a>
+            <a href="courses/language.html"><button class="button-language"><i
+                        class="fa-solid fa-language fa-2x"></i>Language</button></a>
+            <a href="courses/design.html"><button class="button-design"><i
+                        class="fa-solid fa-pen-ruler fa-2x"></i>Design</button></a>
+            <a href="courses/accounting.html"><button class="button-office"><i
+                        class="fa-solid fa-calculator fa-2x"></i></i>Accounting</button></a>
         </div>
 
         <div class="mbakudung" style="display: flex; justify-content: center; align-items: center;">
@@ -174,17 +194,25 @@
 
         <div class="faq">
             <h1> Frequently asked Questions </h1>
-            <div class="card-faq">
+            <div class="card-faq" id="bulet1">
                 <div class="question1">
                     <h3>Bagaimana cara mendaftar di PassionPath?</h3>
                     <p class="kaga-ada">Silahkan untuk klik daftar disini <a href="../view/register.html">Disini!</a>
                 </div>
 
                 <div>
-                    <div id="bulet1"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet1">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-faq">
+
+            <div class="card-faq" id="bulet2">
                 <div class="question2">
                     <h3>Apa itu PassionPath?</h3>
                     <p class="kaga-ada"> PassionPath adalah sebuah platform pendidikan teknologi yang
@@ -199,46 +227,81 @@
                 </div>
 
                 <div>
-                    <div id="bulet2"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet2">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-faq">
+
+            <div class="card-faq" id="bulet3">
                 <div class="question3">
                     <h3>Apakah ada biaya untuk menggunakan PassionPath?</h3>
-                    <p class="kaga-ada">Untuk mengakses PassionPath dikenakan biaya mulai dari 0 Rupiah Alias Gratis!
+                    <p class="kaga-ada">Untuk mengakses PassionPath dikenakan biaya mulai dari 0 Rupiah Alias
+                        Gratis!
                         untuk fitur-fitur premium dan akses yang lebih luas ke seluruh konten kamu bisa mengecek
                         detailnya <a href="../view/product.html">Disini</a></p>
                 </div>
                 <div>
-                    <div id="bulet3"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet3">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-faq">
+
+            <div class="card-faq" id="bulet4">
                 <div class="question4">
                     <h3>Bagaimana PassionPath menjaga privasi dan keamanan data saya?</h3>
                     <p class="kaga-ada">Tenang aja di PassionPath, privasi dan keamanan data kamu adalah prioritas
                         utama.
-                        Kami selalu menggunakan teknologi enkripsi terbaru buat jaga semua informasi kamu tetap aman.
+                        Kami selalu menggunakan teknologi enkripsi terbaru buat jaga semua informasi kamu tetap
+                        aman.
                         Selain itu, tim kami juga selalu memantau dan memperbarui sistem keamanan secara rutin biar
                         kamu nggak perlu khawatir soal kebocoran data. Jadi, kamu bisa fokus belajar dan berkembang
                         tanpa takut soal privasi!</p>
                 </div>
                 <div>
-                    <div id="bulet4"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet4">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-faq">
+
+            <div class="card-faq" id="bulet5">
                 <div class="question5">
                     <h3>Apakah PassionPath bisa diakses secara offline?</h3>
-                    <p class="kaga-ada">Bisa! kamu dapat mengunduh video-video yang ada di PassionPath agar bisa kamu
+                    <p class="kaga-ada">Bisa! kamu dapat mengunduh video-video yang ada di PassionPath agar bisa
+                        kamu
                         dapat
                         menonton video PassionPath dimana pun kapan pun!</p>
                 </div>
                 <div>
-                    <div id="bulet5"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet5">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-faq">
+
+            <div class="card-faq" id="bulet6">
                 <div class="question6">
                     <h3>Bagaimana cara membayar untuk yang berbayar?</h3>
                     <p class="kaga-ada">Untuk berlangganan di PassionPath, kamu bisa bayar dengan mudah lewat
@@ -249,9 +312,17 @@
                         semua fitur keren yang bisa bikin perjalanan belajarmu makin seru!</p>
                 </div>
                 <div>
-                    <div id="bulet6"><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="bulet5">
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="kaga-ada">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
         </div>
 

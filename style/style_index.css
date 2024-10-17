@@ -21,33 +21,34 @@ body {
     background-color: #DCF529;
     padding: 20px;
     height: 580px;
+    /* display: flex; */
 }
 
 .jumbotron-content {
     display: flex;
     flex-direction: row-reverse; /* Mengubah arah flex untuk membalik urutan */
-    justify-content: space-between; /* Memberi ruang antara gambar dan teks */
+    justify-content: center; /* Memberi ruang antara gambar dan teks */
     align-items: center;
-    height: 100%;
-    margin-right: 150px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .jumbotron-image {
-    max-width: 450px;
+    max-width:450px;
+    margin: 20px;
     height: auto;
-    margin-left: 70px;
+    margin-left: 20px;
 }
 
 .jumbotron-text {
     font-size: 28px;
-    max-width: 600px;
-    text-align: left; /* Memastikan teks rata kiri */
-    margin-left: 50px;
+    text-align: left;
 }
 
 .jumbotron-text h2 {
-    margin: 0;
-    font-size:50px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .jumbotron-text p {
@@ -55,27 +56,29 @@ body {
 }
 
 .button-product {
-    height: 41px;
-    width: 170px;
+    /* height: 41px;
+    width: 170px; */
+    padding: 10px 20px;
     font-size: 18px;
     background-color: #8968F6;
-    margin-left: 23px;
+    /* margin-left: 23px; */
     border-radius: 80px;
     color: white;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
 /* weh ga masuk ini weh */
 .button-product :hover{
-    height: 41px;
+    /* height: 41px;
     width: 170px;
-    font-size: 18px;
+    font-size: 18px; */
     background-color: #4192f0;
-    margin-left: 23px;
+    /* margin-left: 23px;
     border-radius: 80px;
     color: white;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .button-container {
@@ -284,25 +287,90 @@ footer {
         align-items: center;
     }
 
+    .jumbotron{
+        background-color: #DCF529;
+        padding: 100px;
+        height: 950px;
+    }
+
     /* .program-card {
         width: 80%;
         margin-bottom: 20px;
     } */
+
+    .jumbotron-content{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .jumbotron-text{
+        font-size: 28px;
+        max-width: 600px;
+        margin-left: 50px;
+        
+    }
+    .jumbotron-image{
+        max-width:450px;
+        margin-left: 70px;
+        order:1;
+    }
+    .jumbotron-text h2{
+        font-size: 50px;
+    }
+
+    .mbakudung{
+        flex-direction: column-reverse;
+    }
+    .pict_mbakudung{
+        order:1;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .jumbotron , .mbakudung {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron{
+        background-color: #DCF529;
+        padding: 100px;
+        height: 1100px;
+    }
+
+    /* .program-card {
+        width: 80%;
+        margin-bottom: 20px;
+    } */
+
+    .jumbotron-content{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .jumbotron-text{
+        font-size: 28px;
+        max-width: 600px;
+        margin-left: 50px;
+        
+    }
+    .jumbotron-image{
+        max-width:450px;
+        margin-left: 70px;
+        order:1;
+    }
+    .jumbotron-text h2{
+        font-size: 50px;
+    }
+    .pict_mbakudung{
+        display: none;
+    }
 }
 
 
 /* Toggle list faq */
 
-#bulet1{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 #bulet1 i{
     color: #000000;
@@ -311,38 +379,16 @@ footer {
 
 }
 
+#bulet1:hover{
+    /* background-color: #000000; */
+    cursor: pointer;
+}
+
 /* #bulet1 .fa-minus{
     display: none;
 } */
 
-#bulet3{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-}
-#bulet4{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-}
-#bulet5{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-}
-#bulet6{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-}
+
 .question1 .kaga-ada{
     display: none;
 }
@@ -350,16 +396,12 @@ footer {
     display:block;
 }
 
-#bulet2{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    /* background-color: #5d4acc; */
-    z-index: 100;
-}
+
 .kaga-ada{
     display: none;
 }
  .ada{
     display: block;
 }
+
+
