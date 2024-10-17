@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+    background-color: #f9f9f9;
+}
 
 main {
     padding: 0;
     text-align: left;
+    margin: 10px;
+    margin-right: 30px;
 }
 
 .hero {
     width: 100%;
     padding: 0;
-    background-color: #fff;
+    background-color: #f9f9f9;;
     margin-bottom: 30px;
 }
 
