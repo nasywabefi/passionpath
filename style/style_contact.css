@@ -76,3 +76,37 @@ body {
     text-decoration: none;
     color:#000000;
 }
+
+@media (max-width: 768px) {
+    .card{
+        margin-top: 420px;
+    }
+    footer{
+        margin-top: 430px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .logo img {
+        max-width: 80%; /* Make logo responsive */
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-buttons a {
+        margin: 5px 0; /* Add spacing for buttons */
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px; /* Add spacing between columns on mobile */
+    }
+
+    .highlight-bg h1 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+}
