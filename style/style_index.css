@@ -97,23 +97,7 @@ body {
     color: #333;
 }
 
-@media (max-width: 480px) {
-    .jumbotron {
-        padding: 15px; 
-        height: 650px;
-    }
 
-    .button-container {
-        display: flex; 
-        justify-content: space-evenly; 
-        gap: 15px; 
-        margin: 270px 0; 
-    }
-    .jumbotron-image {
-        max-width: auto; 
-        margin: 10px 0; 
-    }
-}
 
 /* end selection hero */
 
@@ -233,7 +217,23 @@ body {
         margin-right: 8px; /* Kurangi margin lebih jauh untuk layar sangat kecil */
         font-size: 20px; /* Ukuran ikon lebih kecil */
     }
+    .jumbotron {
+        /* padding: 15px; 
+        height: px; */
+    }
+
+    .button-container {
+        /* display: flex; 
+        justify-content: space-evenly; 
+        gap: 15px; 
+        margin: 270px 0;  */
+    }
+    .jumbotron-image {
+        max-width: auto; 
+        /* margin: 10px 0;  */
+    }
 }
+
 
 
 
@@ -351,8 +351,8 @@ footer {
 
     .jumbotron{
         background-color: #DCF529;
-        padding: 100px;
-        height: 950px;
+        padding: 30px;
+        height: 900px;
     }
 
     /* .program-card {
@@ -372,7 +372,7 @@ footer {
     }
     .jumbotron-image{
         max-width:450px;
-        margin-left: 70px;
+        /* margin-left: 50px; */
         order:1;
     }
     .jumbotron-text h2{
@@ -398,7 +398,7 @@ footer {
     .jumbotron{
         background-color: #DCF529;
         padding: 100px;
-        height: 1100px;
+        /* height: 1100px; */
     }
 
     /* .program-card {
@@ -418,7 +418,7 @@ footer {
     }
     .jumbotron-image{
         max-width:450px;
-        margin-left: 70px;
+        /* margin-left: 70px; */
         order:1;
     }
     .jumbotron-text h2{
