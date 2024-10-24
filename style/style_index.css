@@ -205,6 +205,11 @@ body {
         max-width: 100%; /* Gambar akan mengisi lebar layar pada mobile */
         margin: 0 auto; /* Rata tengah gambar */
     }
+    .mbakudung .text-benefit p i{
+        margin-left: 30px;
+        margin-top: 5px;
+        font-size: 35px;
+    }
 }
 
 /* Media query untuk layar sangat kecil (misal: < 480px) */
