@@ -23,45 +23,41 @@
             let klikFaq5 = document.getElementById("bulet5")
             let klikFaq6 = document.getElementById("bulet6")
 
-        
+
             klikFaq1.addEventListener("click", function () {
-                $(".question1 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
+                document.querySelector(".question1 p").classList.toggle('ada')
+                document.querySelector(".bulet1 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet1 div:nth-child(1)").classList.toggle('kaga-ada')
 
             })
             klikFaq2.addEventListener("click", function () {
-                $(".question2 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
-
+                document.querySelector(".question2 p").classList.toggle('ada')
+                document.querySelector(".bulet2 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet2 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq3.addEventListener("click", function () {
-                $(".question3 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
-
+                document.querySelector(".question3 p").classList.toggle('ada')
+                document.querySelector(".bulet3 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet3 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq4.addEventListener("click", function () {
-                $(".question4 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
-
+                document.querySelector(".question4 p").classList.toggle('ada')
+                document.querySelector(".bulet4 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet4 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq5.addEventListener("click", function () {
-                $(".question5 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
-
+                document.querySelector(".question5 p").classList.toggle('ada')
+                document.querySelector(".bulet5 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet5 div:nth-child(1)").classList.toggle('kaga-ada')
             })
             klikFaq6.addEventListener("click", function () {
-                $(".question6 p").classList.toggle('ada')
-                $(".bulet1 div:nth-child(2)").toggleclass('ada')
-                $(".bulet1 div:nth-child(1)").toggleClass('kaga-ada')
-
+                document.querySelector(".question6 p").classList.toggle('ada')
+                document.querySelector(".bulet6 div:nth-child(2)").classList.toggle('ada')
+                document.querySelector(".bulet6 div:nth-child(1)").classList.toggle('kaga-ada')
             })
 
         })
+
 
 
         setTimeout(function () {
@@ -122,6 +118,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="view/about.html">About</a></li>
                         <li><a href="view/product.html">Products</a></li>
+                        <li><a href="view/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -158,16 +155,18 @@
                     </p>
                 </div>
             </div>
-
-            <div class="button-container"> <!-- Container untuk kedua button -->
+        
+            <div class="button-container">
+                <!-- Container untuk kedua button -->
                 <button class="button-class">
                     <h3><i class="fa-solid fa-chalkboard-user"></i>110 Class</h3>
                 </button>
                 <button class="button-class button-siswa">
                     <h3><i class="fa-solid fa-graduation-cap"></i>200 Siswa</h3>
-                </button> <!-- Button baru -->
+                </button>
             </div>
         </div>
+        
 
         <br>
         <br>
@@ -446,7 +445,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="style/navbar.js"></script>
-    
+
 
 </body>
 
