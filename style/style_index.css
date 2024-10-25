@@ -1,111 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    z-index: -9999;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  z-index: -9999;
 }
-
 
 /* jumbotron */
 .jumbotron {
-    background-color: #DCF529;
-    padding: 20px;
-    height: 580px;
-    /* display: flex; */
+  background-color: #dcf529;
+  padding: 20px;
+  height: 580px;
+  /* display: flex; */
 }
 
 .jumbotron-content {
-    display: flex;
-    flex-direction: row-reverse; /* Mengubah arah flex untuk membalik urutan */
-    justify-content: center; /* Memberi ruang antara gambar dan teks */
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse; /* Mengubah arah flex untuk membalik urutan */
+  justify-content: center; /* Memberi ruang antara gambar dan teks */
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .jumbotron-image {
-    max-width:450px;
-    margin: 20px;
-    height: auto;
-    margin-left: 20px;
+  max-width: 450px;
+  margin: 20px;
+  height: auto;
+  margin-left: 20px;
 }
 
 .jumbotron-text {
-    font-size: 28px;
-    text-align: left;
+  font-size: 28px;
+  text-align: left;
 }
 
 .jumbotron-text h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .jumbotron-text p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .button-product {
-    /* height: 41px;
+  /* height: 41px;
     width: 170px; */
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #8968F6;
-    /* margin-left: 23px; */
-    border-radius: 80px;
-    color: white;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #8968f6;
+  /* margin-left: 23px; */
+  border-radius: 80px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 /* weh ga masuk ini weh */
-.button-product :hover{
-    /* height: 41px;
+.button-product :hover {
+  /* height: 41px;
     width: 170px;
     font-size: 18px; */
-    background-color: #4192f0;
-    /* margin-left: 23px;
+  background-color: #4192f0;
+  /* margin-left: 23px;
     border-radius: 80px;
     color: white;
     cursor: pointer; */
 }
 
 .button-container {
-    display: flex; /* Menyusun button dalam satu baris */
-    justify-content: space-evenly; /* Mengatur posisi button di tengah */
-    gap: 15px; /* Jarak antar button */
-
+  display: flex; /* Menyusun button dalam satu baris */
+  justify-content: space-evenly; /* Mengatur posisi button di tengah */
+  gap: 15px; /* Jarak antar button */
 }
 
-.button-container button h3 i{
-    margin-right: 15px;
+.button-container button h3 i {
+  margin-right: 15px;
 }
-
 
 .button-class {
-    height: 80px;
-    width: 240px;
-    font-size: 18px;
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    border: 1px solid #ccc; /* Tambahkan border jika diperlukan */
+  height: 80px;
+  width: 240px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid #ccc; /* Tambahkan border jika diperlukan */
 }
 
 .button-siswa {
-    background-color: white; /* Warna latar belakang berbeda untuk button baru */
-    color: #333; /* Warna teks untuk button baru */
+  background-color: white; /* Warna latar belakang berbeda untuk button baru */
+  color: #333; /* Warna teks untuk button baru */
 }
 
 /* button 5 */
@@ -115,19 +109,19 @@ body {
 .button-language,
 .button-design,
 .button-office {
-    height: 85px; /* Tinggi tombol */
-    width: 130px; /* Lebar tombol */
-    font-size: 18px; /* Ukuran font */
-    background-color: rgb(209, 209, 209); /* Warna latar belakang */
-    border-radius: 10px; /* Sudut tombol */
-    color: black; /* Warna teks */
-    border: 1px solid #ccc; /* Border tombol */
-    margin: 15px; /* Jarak antara tombol */
-    transition: background-color 0.3s, color 0.3s; /* Efek transisi untuk warna */
-    display: flex; /* Menggunakan flexbox untuk konten tombol */
-    justify-content: center; /* Memusatkan konten secara horizontal */
-    align-items: center; /* Memusatkan konten secara vertikal */
-    flex-direction: column; /*biar icon sama test nya beda baris */
+  height: 85px; /* Tinggi tombol */
+  width: 130px; /* Lebar tombol */
+  font-size: 18px; /* Ukuran font */
+  background-color: rgb(209, 209, 209); /* Warna latar belakang */
+  border-radius: 10px; /* Sudut tombol */
+  color: black; /* Warna teks */
+  border: 1px solid #ccc; /* Border tombol */
+  margin: 15px; /* Jarak antara tombol */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi untuk warna */
+  display: flex; /* Menggunakan flexbox untuk konten tombol */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  flex-direction: column; /*biar icon sama test nya beda baris */
 }
 
 /* Tambahkan efek hover pada tombol */
@@ -136,284 +130,288 @@ body {
 .button-language:hover,
 .button-design:hover,
 .button-office:hover {
-    background-color: #fdfcfc; /* Warna latar belakang saat hover */
-    color: #333; /* Warna teks saat hover */
-    cursor: pointer;
+  background-color: #fdfcfc; /* Warna latar belakang saat hover */
+  color: #333; /* Warna teks saat hover */
+  cursor: pointer;
 }
 
 /* Agar tombol-tombol menyatu dengan jumbotron */
 .button-container2 {
-    display: flex; /* Menyusun tombol dalam satu baris */
-    justify-content: center; /* Mengatur posisi tombol di tengah */
-    flex-wrap: wrap; /* Mengatur agar tombol turun ke baris berikutnya jika tidak muat */
-    gap: 15px; /* Jarak antar tombol */
-    margin: 30px 0; /* Jarak dari elemen lain */
-    align-items: center;
+  display: flex; /* Menyusun tombol dalam satu baris */
+  justify-content: center; /* Mengatur posisi tombol di tengah */
+  flex-wrap: wrap; /* Mengatur agar tombol turun ke baris berikutnya jika tidak muat */
+  gap: 15px; /* Jarak antar tombol */
+  margin: 30px 0; /* Jarak dari elemen lain */
+  align-items: center;
 }
 
 .button-container2 a {
-    display: flex; /* Menyusun tombol dalam satu baris */
-    justify-content: center; /* Mengatur posisi tombol di tengah */
-    flex-wrap: wrap; /* Mengatur agar tombol turun ke baris berikutnya jika tidak muat */
-    gap: 15px; /* Jarak antar tombol */
-    margin: 30px 0; /* Jarak dari elemen lain */
-    align-items: center;
-    text-decoration: none;
+  display: flex; /* Menyusun tombol dalam satu baris */
+  justify-content: center; /* Mengatur posisi tombol di tengah */
+  flex-wrap: wrap; /* Mengatur agar tombol turun ke baris berikutnya jika tidak muat */
+  gap: 15px; /* Jarak antar tombol */
+  margin: 30px 0; /* Jarak dari elemen lain */
+  align-items: center;
+  text-decoration: none;
 }
 
 /* mba mba kudung merah */
-.mbakudung{
-    margin-bottom: 50px;
+.mbakudung {
+  margin-bottom: 50px;
 }
 
-.mbakudung .text-benefit{
-    margin-left: 150px;
+.mbakudung .text-benefit {
+  margin-left: 150px;
 }
 
-.mbakudung .text-benefit h2{
-    font-size:45px;
+.mbakudung .text-benefit h2 {
+  font-size: 45px;
 }
 
-.mbakudung .text-benefit p i{
-    margin-right: 15px;
-    font-size: 35px;
+.mbakudung .text-benefit p i {
+  margin-right: 15px;
+  font-size: 35px;
 }
 
-
-.pict_mbakudung{
-    width: auto; /* Mengubah lebar gambar menjadi 50% dari elemen pembungkusnya */  
-    height: auto; /* Menjaga rasio aspek gambar */  
+.pict_mbakudung {
+  width: auto; /* Mengubah lebar gambar menjadi 50% dari elemen pembungkusnya */
+  height: auto; /* Menjaga rasio aspek gambar */
 }
-
-
-
 
 /* faq */
-.faq{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.faq {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.faq h1{
-    text-align: center;
-    margin-bottom: 30px;
+.faq h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.faq .card-faq{
-    margin-left: 5%; 
-    margin-top: 30px;
-    width: 70%;
-    padding: 30px;
-    box-sizing: border-box;
-    background-color: #D9D9D9;
-    border-radius: 50px;
-    color: black; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.faq .card-faq {
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 70%;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-header, main, footer{
-    display: none;
+header,
+main,
+footer {
+  display: none;
 }
 
-
-
-.faq .card-faq h3{
-    margin-bottom: 10px;
+.faq .card-faq h3 {
+  margin-bottom: 10px;
 }
 
 .card {
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.card-body {
-    padding: 20px;
-}
-.img-fluid {
-    max-width: 100%;
-    height: 50px;
-    object-fit: contain;
+.card:hover {
+  transform: scale(1.05);
 }
 
+.card-body {
+  padding: 20px;
+  cursor: pointer;
+  opacity: 30%;
+}
+.card-body:hover {
+  opacity: 100%;
+  transform: scale(1.05);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
 
 /* footer */
 /* Styling untuk footer */
 footer {
-    background-color: #141414;
-    padding: 40px 0;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+  background-color: #141414;
+  padding: 40px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
-.kekanan{
-    display: flex;
+.kekanan {
+  display: flex;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.footer-about, .contact-us, .information {
-    flex: 1;
-    margin: 20px;
+.footer-about,
+.contact-us,
+.information {
+  flex: 1;
+  margin: 20px;
 }
 
-.footer-about h3, .contact-us h3, .information h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #FF7569;
+.footer-about h3,
+.contact-us h3,
+.information h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ff7569;
 }
 
-.kekanan .contact-us ul, .kekanan .information ul {
-    list-style: none;
-    padding: 0;
+.kekanan .contact-us ul,
+.kekanan .information ul {
+  list-style: none;
+  padding: 0;
 }
 
-.kekanan .contact-us ul li, .kenanan .information ul li {
-    margin-bottom: 10px;
+.kekanan .contact-us ul li,
+.kenanan .information ul li {
+  margin-bottom: 10px;
 }
 
-.kekanan .contact-us ul li a, .kekanan .information ul li a {
-    text-decoration: none;
-    color: #ffff;
-    transition: color 0.3s;
+.kekanan .contact-us ul li a,
+.kekanan .information ul li a {
+  text-decoration: none;
+  color: #ffff;
+  transition: color 0.3s;
 }
 
-.kekanan .contact-us ul li a:hover,.kekanan .information ul li a:hover {
-    color: #fff;
+.kekanan .contact-us ul li a:hover,
+.kekanan .information ul li a:hover {
+  color: #fff;
 }
-
 
 @media (max-width: 900px) {
-    .jumbotron , .mbakudung {
-        flex-direction: column;
-        align-items: center;
-    }
+  .jumbotron,
+  .mbakudung {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .jumbotron{
-        background-color: #DCF529;
-        padding: 100px;
-        height: 950px;
-    }
+  .jumbotron {
+    background-color: #dcf529;
+    padding: 100px;
+    height: 950px;
+  }
 
-    /* .program-card {
+  /* .program-card {
         width: 80%;
         margin-bottom: 20px;
     } */
 
-    .jumbotron-content{
-        flex-direction: column-reverse;
-        text-align: left;
-    }
-    .jumbotron-text{
-        font-size: 28px;
-        max-width: 600px;
-        margin-left: 50px;
-        
-    }
-    .jumbotron-image{
-        max-width:450px;
-        margin-left: 70px;
-        order:1;
-    }
-    .jumbotron-text h2{
-        font-size: 50px;
-    }
+  .jumbotron-content {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .jumbotron-text {
+    font-size: 28px;
+    max-width: 600px;
+    margin-left: 50px;
+  }
+  .jumbotron-image {
+    max-width: 450px;
+    margin-left: 70px;
+    order: 1;
+  }
+  .jumbotron-text h2 {
+    font-size: 50px;
+  }
 
-    .mbakudung{
-        flex-direction: column-reverse;
-    }
-    .pict_mbakudung{
-        order:1;
-        margin-bottom: 10px;
-    }
+  .mbakudung {
+    flex-direction: column-reverse;
+  }
+  .pict_mbakudung {
+    order: 1;
+    margin-bottom: 10px;
+  }
 }
-
 
 @media (max-width: 750px) {
-    .jumbotron , .mbakudung {
-        flex-direction: column;
-        align-items: center;
-    }
+  .jumbotron,
+  .mbakudung {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .jumbotron{
-        background-color: #DCF529;
-        padding: 100px;
-        height: 1100px;
-    }
+  .jumbotron {
+    background-color: #dcf529;
+    padding: 100px;
+    height: 1100px;
+  }
 
-    /* .program-card {
+  /* .program-card {
         width: 80%;
         margin-bottom: 20px;
     } */
 
-    .jumbotron-content{
-        flex-direction: column-reverse;
-        text-align: left;
-    }
-    .jumbotron-text{
-        font-size: 28px;
-        max-width: 600px;
-        margin-left: 50px;
-        
-    }
-    .jumbotron-image{
-        max-width:450px;
-        margin-left: 70px;
-        order:1;
-    }
-    .jumbotron-text h2{
-        font-size: 50px;
-    }
-    .pict_mbakudung{
-        display: none;
-    }
+  .jumbotron-content {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .jumbotron-text {
+    font-size: 28px;
+    max-width: 600px;
+    margin-left: 50px;
+  }
+  .jumbotron-image {
+    max-width: 450px;
+    margin-left: 70px;
+    order: 1;
+  }
+  .jumbotron-text h2 {
+    font-size: 50px;
+  }
+  .pict_mbakudung {
+    display: none;
+  }
 }
-
 
 /* Toggle list faq */
 
-
-
-#bulet1 i{
-    color: #000000;
-    font-size: 20px;
-    z-index: 200;
-
+#bulet1 i {
+  color: #000000;
+  font-size: 20px;
+  z-index: 200;
 }
 
-#bulet1:hover{
-    /* background-color: #000000; */
-    cursor: pointer;
+#bulet1:hover {
+  /* background-color: #000000; */
+  cursor: pointer;
 }
 
 /* #bulet1 .fa-minus{
     display: none;
 } */
 
-
-.question1 .kaga-ada{
-    display: none;
+.question1 .kaga-ada {
+  display: none;
 }
-.question1 .ada{
-    display:block;
-}
-
-
-.kaga-ada{
-    display: none;
-}
- .ada{
-    display: block;
+.question1 .ada {
+  display: block;
 }
 
-
+.kaga-ada {
+  display: none;
+}
+.ada {
+  display: block;
+}
