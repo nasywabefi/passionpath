@@ -45,6 +45,7 @@ body {
 .jumbotron-text h2 {
   font-size: 40px;
   margin-bottom: 10px;
+  --animate-delay: 0.5s;
 }
 
 .jumbotron-text p {
@@ -63,6 +64,7 @@ body {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
+  --animate-delay: 1.3s;
 }
 
 /* weh ga masuk ini weh */
@@ -166,6 +168,7 @@ body {
 
 .mbakudung .text-benefit h2 {
   font-size: 45px;
+  --animate-delay: 3.8s;
 }
 
 .mbakudung .text-benefit p i {
