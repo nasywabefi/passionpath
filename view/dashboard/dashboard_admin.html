@@ -9,35 +9,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <img src="../../img/logo_long_passionpath.png" alt="PassionPath Logo">
-        </div>
-        <div class="divider"></div>
-        <ul class="menu">
-            <li>Dashboard</li>
-            <li>Program</li>
-            <li>Pengaturan Pengguna</li>
-            <li>Pembayaran</li>
-            <li>Laporan & Analisis</li>
-        </ul>
-        <div class="divider divider-bottom"></div>
-        <div class="menu-bottom">
-            <li>Pengaturan</li>
-        </div>
-    </div>
 
-    <div class="main-content">
-        <header>
+    <header>
+        <div class="side-bar">
+            <div class="logo">
+                <img src="../../img/logo_long_passionpath.png" alt="PassionPath Logo">
+            </div>
+            <div class="divider"></div>
+            <ul class="menu">
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-house"></i>
+                    <li>Homepage</li>
+                    </a>
+                </div>
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <li>Program</li>
+                    </a>
+                </div>
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-gear"></i>
+                    <li>Profile</li>
+                    </a>
+                </div>
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <li>Pembayaran</li>
+                    </a>
+                </div>
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <li>Laporan</li>
+                    </a>
+                </div>
+                <div class="menu-option">
+                    <a>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <li>Pengaturan</li>
+                    </a>
+                </div>
+            </ul>
+            <div class="divider divider-bottom"></div>
+            <div class="menu-bottom">
+                <a><li>Log Out</li></a>
+            </div>
+        </div>
+
+        <div class="navbar">
             <div class="header-title">Dashboard</div>
             <div class="user-info">
                 <div class="user-info-text">
                     <span>Admin Account</span>
                     <span>admin123@gmail.com</span>
                 </div>
-                <div class="user-icon">👤</div> 
+                <!-- ini nanti bisa ke link ke profile -->
+                <div class="user-icon"> <i class="fa-solid fa-user"></i></div> 
             </div>
-        </header>        
+        </div>
+    </header>
+
+
+    <div class="main-content">
         <div class="dashboard">
             <h1>Hello, Person!</h1>
             <p>Overview</p>
@@ -69,5 +106,10 @@
             </div>
         </div>
     </div>
+
+
 </body>
+
+
 </html>
+
