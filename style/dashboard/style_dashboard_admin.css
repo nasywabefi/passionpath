@@ -9,8 +9,8 @@ body {
     box-sizing: border-box;
 }
 
-/* Sidebar */
-.sidebar {
+/* Sidebar dan navbar */
+header .side-bar {
     width: 250px;
     background-color: #f0f0f0;
     height: 100vh;
@@ -21,6 +21,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCF529;
+    padding: 15px;
+    color: #333;
+    margin-left: -20px;
+    width: calc(100% + 20px);
+}
+
+.header-title {
+    font-size: 20px;
 }
 
 .logo {
@@ -59,6 +74,16 @@ body {
     flex-grow: 1;
 }
 
+header .menu-option a{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+header .menu-option a li{
+    margin-left: 10px;
+}
+
 .menu li {
     padding: 15px 0;
     cursor: pointer;
@@ -84,6 +109,8 @@ body {
     margin-top: 20px; 
     margin-bottom: 1px;}
 
+
+    
 /* Main Content */
 .main-content {
     margin-left: 250px;
@@ -92,20 +119,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #DCF529;
-    padding: 15px;
-    color: #333;
-    margin-left: -20px;
-    width: calc(100% + 20px);
-}
-
-.header-title {
-    font-size: 20px;
-}
 
 .user-info {
     display: flex;
