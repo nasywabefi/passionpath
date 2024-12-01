@@ -6,6 +6,9 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../../style/dashboard/style_dashboard_siswa.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <style>
@@ -76,111 +79,244 @@
 }
 </style>
 
+<script>
+    const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      alert(`You selected the ${card.textContent} program.`);
+    });
+  });
+
+</script>
+
 
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <div class="logo">
-      <img src="../../img/logo_long_passionpath.png" alt="PassionPath Logo">
-    </div>
-    <div class="divider"></div>
-    <ul class="menu">
-      <li class="active"><a href="#">Homepage</a></li>
-      <li ><a href="#">Dashboard</a></li>
-      <li><a href="#">Profil</a></li>
-      <li><a href="#">Program</a></li>
-      <li><a href="#">Pembayaran</a></li>
-      <li><a href="#">Pengaturan</a></li>
-    </ul>
-    <div class="divider divider-bottom"></div>
-    <div class="menu-bottom">
-      <li><a href="#" class="logout">Keluar</a></li>
-    </div>
-  </div>
+    <header>
+      <div class="side-bar">
+          <div class="logo">
+              <img src="../../img/logo_long_passionpath.png" alt="PassionPath Logo">
+          </div>
+          <div class="divider"></div>
+
+
+          <ul class="menu">
+            <div class="menu-option">
+                <a>
+                <i class="fa-solid fa-house"></i>
+                <li>Homepage</li>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <li>Belajar</li>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a>
+                <i class="fa-solid fa-user"></i>
+                <li>Profile</li>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a>
+                <i class="fa-solid fa-money-bill"></i>
+                <li>Pembayaran</li>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a>
+                <i class="fa-solid fa-gear"></i>
+                <li>Peraturan</li>
+                </a>
+            </div>
+          </ul>
+        <div class="divider divider-bottom"></div>
+        <div class="menu-bottom">
+            <a><li>Log Out</li></a>
+        </div>
+      </div>
+
+      <div class="navbar">
+          <div class="header-title">Dashboard</div>
+          <div class="user-info">
+              <div class="user-info-text">
+                  <span>Admin Account</span>
+                  <span>admin123@gmail.com</span>
+              </div>
+              <!-- ini nanti bisa ke link ke profile -->
+              <div class="user-icon"> <i class="fa-solid fa-user"></i></div> 
+          </div>
+      </div>
+    </header>
 
   <!-- Main Content -->
   <div class="main-content">
-    <!-- Navbar -->
-    <header class="header2">
-      <div class="header-title"><strong>Dashboard</strong></div>
-      <div class="user-info">
-        <div class="user-info-text">
-          <span class="user-role">Student Account</span><br>
-          <span class="user-email">admin123@gmail.com</span>
-        </div>
-        <div class="user-icon">👤</div> 
-      </div>
-    </header>  
 
-    <!-- Welcome Section -->
-    <section class="welcome-section">
-      <h1><strong>Hello, Student!</strong></h1>
-      <p>Semoga Belajarmu Menyenangkan</p>
-    </section>
-
-    <!-- Activity Tracker -->
-    <section class="activity-tracker">
-      <h3><strong>Activity Tracker</strong></h3>
-      <div class="tracker-details">
-        <div class="badges">
-          <span class="badge">S</span>
-          <span class="badge">S</span>
-          <span class="badge">R</span>
-          <span class="badge">K</span>
-          <span class="badge">J</span>
-          <span class="badge">S</span>
-          <span class="badge">M</span>
-        </div>
-        <div class="score">
-          <img src="../../img/atctivity_traker.png" alt="Fire Icon">
-        </div>
-      </div>
-    </section>
-
-        <!-- Program Activities -->
-        <section class="section-kotak">
-          <h3><strong>Aktivitas Program</strong></h3>
-          <div class="bentuk-kotak">
-            <div class="kotak">
-              <img src="../../img/business_aktivitas.png" alt="koper">
-              <a href="#" class="link-lanjutkan">Lanjutkan</a>
-            </div>
-            <div class="kotak">
-              <img src="../../img/business_aktivitas.png" alt="koper">
-              <a href="#" class="link-lanjutkan">Lanjutkan</a>
-            </div>
-            <div class="kotak">
-              <img style="width: 270px; height: 75px; margin-top: 30px;" src="../img/psikotes.png" alt="koper">
-              <a href="#" class="link-lanjutkan">Lanjutkan</a>
-            </div>
+    <div class="home">
+      <section class="welcome-section">
+        <h1><strong>Hello, Student!</strong></h1>
+        <p>Semoga Belajarmu Menyenangkan</p>
+      </section>
+  
+      <!-- Activity Tracker -->
+      <section class="activity-tracker">
+        <h3><strong>Activity Tracker</strong></h3>
+        <div class="tracker-details">
+          <div class="badges">
+            <span class="badge">S</span>
+            <span class="badge">S</span>
+            <span class="badge">R</span>
+            <span class="badge">K</span>
+            <span class="badge">J</span>
+            <span class="badge">S</span>
+            <span class="badge">M</span>
           </div>
-        </section>
-    
-    
-    
-    <!-- Recommendations -->
-    <section class="section-rekomendasi">
-      <h3><strong>Rekomendasi Program Lainnya</strong></h3>
-      <div class="bentuk-rekomendasi">
-        <div class="rekomendasi">
-          <img src="../../img/Develop.png" alt="Rekomendasi 1">
+          <div class="score">
+            <img src="../../img/atctivity_traker.png" alt="Fire Icon">
+          </div>
         </div>
-        <div class="rekomendasi">
-          <img style="height: 200px; width: 60%;" src="../../img/languange.png" alt="Rekomendasi 2">
+      </section>
+  
+          <!-- Program Activities -->
+          <section class="section-kotak">
+            <h3><strong>Aktivitas Program</strong></h3>
+            <div class="bentuk-kotak">
+              <div class="kotak">
+                <img src="../../img/business_aktivitas.png" alt="koper">
+                <a href="#" class="link-lanjutkan">Lanjutkan</a>
+              </div>
+              <div class="kotak">
+                <img src="../../img/business_aktivitas.png" alt="koper">
+                <a href="#" class="link-lanjutkan">Lanjutkan</a>
+              </div>
+              <div class="kotak">
+                <img style="width: 270px; height: 75px; margin-top: 30px;" src="../../img/psikotes.png" alt="koper">
+                <a href="#" class="link-lanjutkan">Lanjutkan</a>
+              </div>
+            </div>
+          </section>
+      
+      
+      
+      <!-- Recommendations -->
+      <section class="section-rekomendasi">
+        <h3><strong>Rekomendasi Program Lainnya</strong></h3>
+        <div class="bentuk-rekomendasi">
+          <div class="rekomendasi">
+            <img src="../../img/Develop.png" alt="Rekomendasi 1">
+          </div>
+          <div class="rekomendasi">
+            <img style="height: 200px; width: 60%;" src="../../img/languange.png" alt="Rekomendasi 2">
+          </div>
+          <div class="rekomendasi">
+            <img style="margin-bottom: 15px; height: 215px; width: 65%;" src="../../img/design.png" alt="Rekomendasi 3">
+          </div>
+          <div class="rekomendasi">
+            <img style="margin-bottom: 10px; height: 200px; width: 50%;" src="../../img/office.png" alt="Rekomendasi 4">
+          </div>
         </div>
-        <div class="rekomendasi">
-          <img style="margin-bottom: 15px; height: 215px; width: 65%;" src="../../img/design.png" alt="Rekomendasi 3">
-        </div>
-        <div class="rekomendasi">
-          <img style="margin-bottom: 10px; height: 200px; width: 50%;" src="../../img/office.png" alt="Rekomendasi 4">
-        </div>
+      </section>
+    </div>
+
+    <div class="belajar">
+      <section class="welcome-section">
+        <h1><strong>Belajar</strong></h1>
+        <p>Lanjut belajarmu untuk peningkatan wawasan setiap harinya!</p>
+      </section>
+
+
+    <div class="container mt-5">
+      <!-- Row 1 -->
+      <div class="row mb-4">
+          <div class="col-md-4">
+              <div class="card">
+                  <!-- <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image"> -->
+                  <div class="card-body">
+                      <h5 class="card-title">Card 1</h5>
+                      <p class="card-text">This is the description for Card 1.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <!-- <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image"> -->
+                  <div class="card-body">
+                      <h5 class="card-title">Card 2</h5>
+                      <p class="card-text">This is the description for Card 2.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <!-- <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image"> -->
+                  <div class="card-body">
+                      <h5 class="card-title">Card 3</h5>
+                      <p class="card-text">This is the description for Card 3.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </section>
+
+      <!-- Row 2 -->
+      <div class="row mb-4">
+          <div class="col-md-4">
+              <div class="card">
+                  <!-- <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image"> -->
+                  <div class="card-body">
+                      <h5 class="card-title">Card 4</h5>
+                      <p class="card-text">This is the description for Card 4.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <!-- <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image"> -->
+                  <div class="card-body">
+                      <h5 class="card-title">Card 5</h5>
+                      <p class="card-text">This is the description for Card 5.</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    </div>
+
+
+    <div class="profile">
+      <section class="welcome-section">
+        <h1><strong>Profile</strong></h1>
+        <p>Lanjut belajar untuk peningkatan wawasan setiap harinya!</p>
+      </section>
+    </div>
+
+    <div class="payment">
+      <section class="welcome-section">
+        <h1><strong>Pembayaran</strong></h1>
+        <p>Buka kelas baru!</p>
+      </section>
+    </div>
+
+    <div class="pengaturan">
+      <section class="welcome-section">
+        <h1><strong>Pengaturan</strong></h1>
+        <p>Lanjut belajarmu untuk peningkatan wawasan setiap harinya!</p>
+      </section>
+    </div>
+    
     
 
   </div>
 
-  <script src="../../style/dashboard/dahsboard_siswa.js"></script>
 </body>
 </html>
+
 
