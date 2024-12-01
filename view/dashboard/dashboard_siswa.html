@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../style/dashboard_siswa.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  .section-rekomendasi {
+  width: 100%; /* Buat responsif */
+  max-width: 1098px;
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.bentuk-rekomendasi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 15px;
+}
+
+.rekomendasi {
+  display: flex;
+  justify-content: center; /* Posisi horizontal di tengah */
+  align-items: center;     /* Posisi vertikal di tengah */
+  position: relative;
+  width: 90%; /* Sesuaikan dengan grid */
+  height: 250px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rekomendasi img {
+  width: 70%; /* Sesuaikan dengan kebutuhan */
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+.section-rekomendasi h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.rekomendasi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.rekomendasi p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.rekomendasi a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1d72b8;
+}
+
+.rekomendasi a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="../img/logo_long_passionpath.png" alt="PassionPath Logo">
+    </div>
+    <div class="divider"></div>
+    <ul class="menu">
+      <li class="active"><a href="#">Homepage</a></li>
+      <li ><a href="#">Dashboard</a></li>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Program</a></li>
+      <li><a href="#">Pembayaran</a></li>
+      <li><a href="#">Pengaturan</a></li>
+    </ul>
+    <div class="divider divider-bottom"></div>
+    <div class="menu-bottom">
+      <li><a href="#" class="logout">Keluar</a></li>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Navbar -->
+    <header class="header2">
+      <div class="header-title"><strong>Dashboard</strong></div>
+      <div class="user-info">
+        <div class="user-info-text">
+          <span class="user-role">Student Account</span><br>
+          <span class="user-email">admin123@gmail.com</span>
+        </div>
+        <div class="user-icon">👤</div> 
+      </div>
+    </header>  
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <h1><strong>Hello, Student!</strong></h1>
+      <p>Semoga Belajarmu Menyenangkan</p>
+    </section>
+
+    <!-- Activity Tracker -->
+    <section class="activity-tracker">
+      <h3><strong>Activity Tracker</strong></h3>
+      <div class="tracker-details">
+        <div class="badges">
+          <span class="badge">S</span>
+          <span class="badge">S</span>
+          <span class="badge">R</span>
+          <span class="badge">K</span>
+          <span class="badge">J</span>
+          <span class="badge">S</span>
+          <span class="badge">M</span>
+        </div>
+        <div class="score">
+          <img src="../img/atctivity_traker.png" alt="Fire Icon">
+        </div>
+      </div>
+    </section>
+
+        <!-- Program Activities -->
+        <section class="section-kotak">
+          <h3><strong>Aktivitas Program</strong></h3>
+          <div class="bentuk-kotak">
+            <div class="kotak">
+              <img src="../img/business_aktivitas.png" alt="koper">
+              <a href="#" class="link-lanjutkan">Lanjutkan</a>
+            </div>
+            <div class="kotak">
+              <img src="../img/business_aktivitas.png" alt="koper">
+              <a href="#" class="link-lanjutkan">Lanjutkan</a>
+            </div>
+            <div class="kotak">
+              <img style="width: 270px; height: 75px; margin-top: 30px;" src="../img/psikotes.png" alt="koper">
+              <a href="#" class="link-lanjutkan">Lanjutkan</a>
+            </div>
+          </div>
+        </section>
+    
+    
+    
+    <!-- Recommendations -->
+    <section class="section-rekomendasi">
+      <h3><strong>Rekomendasi Program Lainnya</strong></h3>
+      <div class="bentuk-rekomendasi">
+        <div class="rekomendasi">
+          <img src="../img/Develop.png" alt="Rekomendasi 1">
+        </div>
+        <div class="rekomendasi">
+          <img style="height: 200px; width: 60%;" src="../img/languange.png" alt="Rekomendasi 2">
+        </div>
+        <div class="rekomendasi">
+          <img style="margin-bottom: 15px; height: 215px; width: 65%;" src="../img/design.png" alt="Rekomendasi 3">
+        </div>
+        <div class="rekomendasi">
+          <img style="margin-bottom: 10px; height: 200px; width: 50%;" src="../img/office.png" alt="Rekomendasi 4">
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+
+  <script src="../style/dashboard_siswa.js"></script>
+</body>
+</html>
