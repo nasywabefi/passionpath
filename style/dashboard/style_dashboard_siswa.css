@@ -1,0 +1,284 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #fff; /* Warna putih sesuai gambar */
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Bayangan sidebar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 180px;
+  margin-top: -15px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+.menu {
+  list-style: none;
+  flex-grow: 1;
+  color: rgb(255, 0, 0);
+}
+
+.sidebar .menu li a {
+  color: #000000; /* Warna default */
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 20px;
+  transition: color 0.3s ease;
+}
+
+.menu li {
+  padding: 15px 0;
+  cursor: pointer;
+  color: #ff0000; /* Warna teks sidebar */
+  font-weight: bold; /* Teks tebal */
+}
+
+.menu li.active {
+  color: #ff0000; /* Warna untuk menu aktif */
+}
+
+.menu li:hover {
+  color: #ff0000;
+}
+
+.menu-bottom {
+  list-style: none;
+  padding-top: 20px;
+  cursor: pointer;
+  color: #ff0000; /* Warna merah untuk Keluar */
+  font-weight: bold;
+}
+
+.menu-bottom:hover {
+  color: #1d72b8;
+}
+
+.button-business i {
+  font-size: 44px; /* Ukuran ikon (dapat diubah sesuai kebutuhan) */
+}
+
+.button-development i {
+  font-size: 54px;
+}
+
+.button-language i {
+  font-size: 54px;
+}
+
+.button-design i {
+  font-size: 54px;
+}
+
+.button-accounting i {
+  font-size: 54px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dcf529; /* Warna header kuning */
+  padding: 15px;
+  color: #333;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info-text {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.user-info span:first-child {
+  font-weight: bold;
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Welcome Section */
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.welcome-section p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Activity Tracker */
+.activity-tracker {
+  background: #e3e2e2; /* Warna abu-abu sesuai gambar */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.activity-tracker h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score img {
+  position: relative;
+  width: 180px; /* Menyesuaikan ukuran gambar */
+  max-height: 180px; /* Menyesuaikan ukuran gambar */
+  left: 870px;
+  bottom: 90px;
+}
+
+.badges .badge {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #ffffff; /* Warna hijau terang */
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.score {
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section-kotak {
+  width: 1098px;
+  height: 224px;
+  background-color: #bdacf5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-kotak h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bentuk-kotak {
+  display: flex;
+  gap: 15px;
+}
+
+.kotak {
+  position: relative;
+  width: 316px;
+  height: 124px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kotak img {
+  width: 280px; /* Atur sesuai kebutuhan */
+  height: 95px; /* Atur sesuai kebutuhan */
+  object-fit: cover; /* Agar gambar mengisi area dengan cropping jika diperlukan */
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+
+.link-lanjutkan {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1d72b8;
+}
+
+
+.kotak:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.kotak p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.kotak a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1d72b8;
+}
+
+.kotak a:hover {
+  text-decoration: underline;
+}
