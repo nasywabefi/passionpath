@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 0px 20px 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.user-info span:first-child {
+    font-weight: bold; 
+}
+
+.user-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+.img-preview {
+    display: flex;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+.mb-3{
+    width: 60%;
+}
+.save-button{
+    background-color: #8968F6; 
+    color: white; 
+    border: none; 
+    border-radius: 30px; 
+    padding: 10px 20px; 
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.save-button:hover {
+    background-color: #2e292e; 
+}
+
+.form-group{
+    width: 60%;
+}
+
+
+/* Konten Utama */
+.container {
+    margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+    padding: 20px;
+    margin-top: 80px; /* Memberi jarak untuk navbar */
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    .side-bar {
+        width: 200px;
+    }
+    .navbar {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+    .container {
+        margin-left: 200px;
+    }
+}
